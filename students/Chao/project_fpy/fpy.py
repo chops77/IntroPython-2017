@@ -18,6 +18,10 @@ from icontrol.exceptions import iControlUnexpectedHTTPError
 from requests.exceptions import ConnectionError
 import getpass
 import ipaddress
+import urllib3
+
+urllib3.disable_warnings()
+
 
 class LTM:
     """ Main Class for Local Traffic Manager Module """
